@@ -9,9 +9,9 @@ public class DemoApplication {
 
     public static void main(String[] args) {
         ApplicationContext ctx = SpringApplication.run(DemoApplication.class, args);
-        InjectedByContsructorService contsructorService = (InjectedByContsructorService) ctx.getBean("injectedByContsructorService");
+        InjectedByContsructorService constructorService = (InjectedByContsructorService) ctx.getBean("injectedByContsructorService");
 
-        contsructorService.getMessage();
+        constructorService.getMessage();
 
         SetterBasedService setterBasedService = (SetterBasedService) ctx.getBean("setterBasedService");
 
